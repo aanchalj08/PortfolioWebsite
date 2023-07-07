@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Signika:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
+.project{
+    margin-top:10em;
+}
+
+.project h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Signika', sans-serif;
+    margin-bottom:0;
+}
+
+hr{
+    margin-top: 5rem;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+}

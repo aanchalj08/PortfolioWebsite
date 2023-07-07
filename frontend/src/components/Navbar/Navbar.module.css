@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu:wght@500&display=swap');
+
+.nav-head{
+    position: fixed;
+    display:flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    padding: 2em 0;
+    box-shadow:0px 5px 5px rgb(182, 181, 181);
+    font-size: medium;
+    font-weight: 600;
+    z-index:100;
+    
+   
+}
+.name{
+    color:black;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.name:hover{
+    color:#8338ec;
+}
+.git{
+ position: fixed;
+  background: #a65bde;
+  box-shadow: 0 0 0 999px #a65bde;
+  clip-path: inset(0 -100%);
+  inset: 0 auto auto 0;
+  transform-origin: 100% 0;
+  transform: translate(-29.3%) rotate(-45deg);
+  padding:0.5em;
+  transition: all .5s ease-in-out;
+  
+    
+    
+}
+.git:hover{
+    background: #643c9b;
+  box-shadow: 0 0 0 999px #643c9b;
+}
+
+
+.git a{
+    color:white;
+    text-decoration: none;
+    font-size: large;
+    letter-spacing:1px;
+    
+    
+}
+.linkedin{
+    position: fixed;
+    background: #0077B6;
+    box-shadow: 0 0 0 999px #0077B6;
+    clip-path: inset(0 -100%);
+    inset: 0 auto auto 0;
+    transform-origin: 100% 0;
+    transform: translate(-29.3%) rotate(-45deg);
+    padding:0.5em;
+    top:1%;
+    letter-spacing:1px;
+    
+   
+}
+
+.linkedin:hover{
+    background: #135e86;
+    box-shadow: 0 0 0 999px #135e86;
+}
+.linkedin a{
+    color:white;
+    text-decoration: none;
+    font-size: large;
+}
+.hamburger{
+    display: none;
+}
+
+
+
+
+@media(max-width:849px){
+    .nav-head {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2em 0;
+        height:80px;
+        
+        
+      }
+   
+    .hamburger{
+        display: block;
+        margin-right:5%;
+        
+    }
+   
+   
+   
+
+}
+

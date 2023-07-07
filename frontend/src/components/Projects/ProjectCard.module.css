@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima&family=Poppins&family=Roboto+Slab:wght@300;400&display=swap');
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:-3em;
+    margin-right: 3em;
+    padding:0;
+    margin-bottom:-10em;
+   
+}
+
+.head img{
+   width:45%;
+   padding:0;
+   margin:0;
+    
+}
+.head .description{
+    margin-top:-6em;
+    width:40%;
+    padding:0;
+    margin-bottom: 0;
+    
+}
+
+.head .description h1{
+   text-align: left;
+   font-family: 'Roboto Slab', serif;
+   font-weight: bold;
+}
+
+ .head .description p{
+    font-size:larger;
+    line-height:1.75;
+    color:rgb(112, 110, 110);
+    
+
+ }
+
+ .head .description button{
+    background-color: #8338ec;
+    border:none;
+    padding:1em 3em;
+    letter-spacing:1px;
+    font-weight: bold;
+    font-size: large;
+ }
+
+ .head .description button:hover{
+    background-color: #5f3496;
+    transform: translateY(6px);
+ }
+
+ @media(max-width:1500px){
+   .head .description{
+      margin-top:-2em;
+      
+      
+  }
+ }
+
+ @media(max-width:1300px){
+   .head .description{
+      margin-top:2em;
+      
+      
+  }
+ }
+
+ @media(max-width:1250px){
+   .head{
+      display: flex;
+      flex-direction: column;
+      margin-right: 0em;
+      padding:0;
+      margin-bottom:2em;
+      text-align: center;
+     
+  }
+  .head .description h1{
+   text-align:center;
+   
+}
+.head img{
+   width:100%;
+   padding:0;
+   margin-bottom:-8rem;
+    
+}
+.head .description{
+  
+   width:80%;
+   
+}
+
+ }
+ @media(max-width:400px){
+   .head img{
+      margin-bottom:-6rem;
+   }
+   .head .description{
+  
+      width:85%;
+      
+   }
+ }
+
+
+ 
+ 
+ 

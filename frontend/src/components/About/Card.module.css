@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima&family=Roboto+Slab:wght@300;400&display=swap');
+.container{
+    background-color: #5c19a0db;
+    border-radius: 12px;
+    padding:1em 7em;
+    margin-bottom:2em;
+    box-shadow:0 5px 5px rgb(77, 75, 75);
+    color:white;
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Roboto Slab', serif;
+}
+.container p{
+    font-size:1.2rem;
+    font-family: 'Roboto Slab:wght@300', serif;
+    letter-spacing: 0.1rem;
+}
+
+.container:hover{
+    animation: pop 0.3s linear 1;
+}
+@keyframes pop{
+    50%  {transform: scale(1.2);}
+  }
+
+ @media(max-width:1700px){
+    .container{
+        padding:1em 5em;
+    }
+
+ } 
+
+ @media(max-width:1450px){
+    .container{
+        padding:1em 3em;
+    }
+
+ }
+ 

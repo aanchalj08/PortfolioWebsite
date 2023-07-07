@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Signika:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
+
+
+.container{
+    margin-top:5rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom:4rem;
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+.container h1{
+    text-transform:uppercase;
+    font-family:'Signika', sans-serif;
+
+}
+
+.link{
+    margin-top:5rem;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+}
+.container a{
+    border:none;
+    font-size: x-large;
+    padding:1rem 3rem;
+    margin-right:2rem;
+    border-radius: 12px;
+    background-color: #8338ec;
+    color: white;
+    text-decoration: none;
+    box-shadow:0 5px 5px rgba(157,154,154);
+}
+
+
+.container a:hover{
+    border:none;
+    font-size: x-large;
+    padding:1rem 3rem;
+    margin-right:2rem;
+    border-radius: 12px;
+    background-color: #411a77;
+    color: white;
+}
+.cssanimation, .cssanimation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+
+@media(max-width:900px){
+    .container a{
+        font-size:larger;
+        padding:1rem 3rem;
+       
+    }
+    .container a:hover{
+        border:none;
+        font-size:larger;
+        padding:1rem 3rem;
+    }
+
+
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media(max-width:770px){
+    .link{
+        display: flex;
+        flex-direction: column;
+    }
+    .container a{
+        margin-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+        margin-right: 0rem;
+        width:20em;
+       
+    }
+
+}
+@media(max-width:400px){
+    .link{
+        display: flex;
+        flex-direction: column;
+    }
+    .container a{
+        padding:1em;
+        margin-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+        margin-right: 0rem;
+        width:19em;
+       
+    }
+
+}
+

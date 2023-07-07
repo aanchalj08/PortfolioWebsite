@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Poppins&family=Roboto+Slab:wght@300;400&display=swap');
+
+.main{
+    margin-top:10rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom:11rem;
+}
+
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Signika', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+.main .form{
+    background-color: #cdb4db88;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    border-radius: 12px;
+    justify-content: left;
+    text-align: left;
+    padding:4rem;
+    box-shadow: 0 5px 5px grey;
+}
+
+.form label{
+    font-size: larger;
+    font-weight: bold;
+    color:rgb(94, 93, 93);
+    display: block;
+    margin-bottom:0.5rem;
+}
+
+.form input{
+    margin-bottom: 2.5rem;
+    width:100%;
+    padding:1rem;
+    font-size: larger;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+
+.form input:last-child{
+    padding-bottom:10rem;
+}
+
+.form button{
+    background-color:#652ab7;
+    border:none;
+    padding:1rem;
+    margin-right:1rem;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 5px rgb(177, 176, 176);
+}
+
+.form button:hover{
+    background-color: #8c50e1;
+    transform: translateY(-6px);
+}
+
+.main p{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+    width:50%;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color:rgb(119, 115, 115);
+    font-family: 'Signika', sans-serif;
+    line-height: 2.1rem;
+}
+.form p{
+    text-align: left;
+    color:red;
+    padding: 0;
+    margin: 0;
+    margin-top:-2rem;
+    margin-bottom: 1rem;
+}
+
+@media(max-width:1500px){
+    .main .form{
+        width:65%;
+    }
+}
+
+@media(max-width:1200px){
+    .main p{
+        width:80%;
+    }
+
+    .main .form{
+        width:80%;
+    }
+   
+}
+
+@media(max-width:500px){
+    .main .form{
+        padding:2em;
+    }
+    .form button{
+        margin-bottom: 1rem;
+        width:100%;
+    }
+
+}

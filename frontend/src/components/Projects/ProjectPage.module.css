@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima&family=Poppins&family=Roboto+Slab:wght@300;400&display=swap');
+
+.container{
+    margin-top:15rem;
+}
+.container .intro{
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+}
+.container .title{
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.container h1:hover{
+    color:#8338ec
+}
+
+.tagline{
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    color:#b392ac;
+    font-size:1.4rem;
+    line-height:2rem;
+}
+.tagline2{
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    color:rgb(86, 84, 84);
+    font-size:1.4rem;
+    line-height:2rem;
+}
+.intro img{
+    margin-top:-4rem;
+}
+
+.links{
+    margin-top:-10rem;
+
+}
+
+.links a{
+    border:none;
+    font-size: x-large;
+    padding:1rem 3rem;
+    margin-right:2rem;
+    border-radius: 12px;
+    background-color: #8338ec;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 5px 5px rgb(157, 154, 154);
+
+}
+
+.links a:hover{
+    border:none;
+    font-size: x-large;
+    padding:1rem 3rem;
+    margin-right:2rem;
+    border-radius: 12px;
+    background-color: #411a77;
+    color: white;
+}
+
+.sec2{
+    margin-top:6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width:50%;
+    margin-bottom: 5rem;
+  }
+
+  .heading{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+  }
+
+  .sec2 p{
+    color:#b392ac;
+    font-size: x-large;
+    
+
+  }
+
+  .sec3{
+    margin-top:6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width:50%;
+    margin-bottom: 5rem;
+
+  }
+
+  .sec3 button{
+    margin:1rem;
+    padding:1rem 2rem;
+    background-color: rgb(158, 157, 157);
+    border:none;
+    border-radius: 12px;
+    font-size: large;
+  }
+
+  .sec3 button:hover{
+    background-color: grey;
+    transform: translateY(-4px);
+  }
+
+  .sec4{
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+ 
+  .sec4 button{
+    background-color: transparent;
+    color:#8338ec;
+    padding: 1rem 2rem;
+    font-size: x-large;
+    border-radius: 12px;
+    border-width: 0.2rem;
+    font-family:'Roboto Slab', serif;
+    font-weight: bold;
+    border-color: black;
+  }
+  .sec4 button:hover{
+    transform: translateY(-5px);
+  }
+

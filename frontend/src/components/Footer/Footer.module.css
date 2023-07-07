@@ -1,0 +1,50 @@
+.container{
+    color:white;
+    background-color: black;
+    padding:2em 10em;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.icon{
+    margin-right:1em;
+    cursor: pointer;
+}
+
+.container hr{
+    margin-top: 5em;
+    border: 0.5px solid grey;
+    padding:0;
+
+}
+
+.para{
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:3em;
+    
+}
+.container a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+@media(max-width:780px){
+    .head{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .container{
+        padding:2em 5em;
+    }
+
+}
