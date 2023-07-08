@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import Footer from "../Footer/Footer";
 import { useState } from "react";
 import FormSuccess from "./FormSuccess";
+import axios from "axios";
 
 function ContactPage() {
   const [name, setName] = useState("");
@@ -51,33 +52,22 @@ function ContactPage() {
       alert("Please enter a message");
       return;
     }
+    const formData={
+      userName:name,
+      userEmail:email,
+      userMessage:message
+    };
+
     try {
-      const response = await fetch("http://localhost:8000/submit-form", {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          userName: name,
-          userEmail: email,
-          userMessage: message
-        })
-      });
-
-      if (!response.ok) {
-        throw new Error('Error submitting the form.');
-      }
-
+      await axios.post("http://localhost:8000/submit-form", formData);
       console.log('Form submitted successfully.');
-      
-
-     
       setName("");
       setEmail("");
       setMessage("");
       setSubmitted(true);
     } catch (error) {
-  console.error('Error submitting the form:', error);
+      alert(error.resonse.data.error);
+      console.error('Error submitting the form:', error);
     }
   };
 

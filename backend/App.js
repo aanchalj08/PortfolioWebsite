@@ -5,11 +5,15 @@ const Messages=require('./collections/Messages');
 const cors = require('cors');
 
 
-connectDB();
-
 
 const app = express();
+
+
+
+
+
 app.use(cors());
+connectDB();
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'..', 'frontend', 'build')));
@@ -49,8 +53,14 @@ app.post("/submit-form", async (req, res) => {
 });
 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname,'..', 'frontend', 'build','index.html'));
+app.get('/', async(req, res) => {
+  try {
+    const messages = await Messages.find();
+    res.json({ success: true, messages });
+  } catch (error) {
+    console.error("Error fetching messages:", error);
+    res.status(500).json({ success: false, error: "Error fetching messages" });
+  }
 });
 
 
